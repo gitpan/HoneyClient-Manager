@@ -5,7 +5,7 @@
 # Description: A SOAP server that provides programmatic access to all
 #              VM clients.
 #
-# CVS: $Id: VM.pm 773 2007-07-26 19:04:55Z kindlund $
+# CVS: $Id: VM.pm 787 2007-07-30 19:02:18Z kindlund $
 #
 # @author kindlund
 #
@@ -517,7 +517,7 @@ diag("About to run extended tests.");
 # exactly quick.
 diag("Note: These extended tests will take *significant* time to complete (10-30 minutes).");
 
-my $question = prompt("# Do you want to run extended tests?", "no");
+$question = prompt("# Do you want to run extended tests?", "no");
 if ($question !~ /^y.*/i) {
     exit;
 }
@@ -3635,7 +3635,7 @@ eval {
              glob($cloneVMDir . "/*.vms*"),
              glob($cloneVMDir . "/*.vme*")) {
         $mode = sprintf("%04o", stat($_)->mode & 07777);
-        is($mode, "0400", "setMasterVM(config => '$cloneVM')") or diag("The setMasterVM() call failed.  Expected file ($_) to be mode 0400, but it was mode $mode instead.");
+        is($mode, "0440", "setMasterVM(config => '$cloneVM')") or diag("The setMasterVM() call failed.  Expected file ($_) to be mode 0440, but it was mode $mode instead.");
     }
 
     # Destroy the clone VM.
