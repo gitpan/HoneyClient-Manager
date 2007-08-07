@@ -5,7 +5,7 @@
 # Description: Generic object model for handling a single HoneyClient
 #              cloned VM on the host system.
 #
-# CVS: $Id: Clone.pm 773 2007-07-26 19:04:55Z kindlund $
+# CVS: $Id: Clone.pm 796 2007-08-07 16:36:16Z kindlund $
 #
 # @author kindlund
 #
@@ -37,7 +37,7 @@ model for handling a single HoneyClient cloned VM on the host system.
 
 =head1 VERSION
 
-This documentation refers to HoneyClient::Manager::VM::Clone version 0.98.
+This documentation refers to HoneyClient::Manager::VM::Clone version 0.99.
 
 =head1 SYNOPSIS
 
@@ -124,7 +124,7 @@ BEGIN {
     our (@ISA, @EXPORT, @EXPORT_OK, %EXPORT_TAGS, $VERSION);
 
     # Set our package version.
-    $VERSION = 0.98;
+    $VERSION = 0.99;
 
     @ISA = qw(Exporter);
 

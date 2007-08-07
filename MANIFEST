@@ -33,7 +33,6 @@ t/test_vm/winXPPro-s001.vmdk
 t/test_vm/winXPPro.vmdk
 t/test_vm/winXPPro.vmsd
 t/test_vm/winXPPro.vmx
-thirdparty/flasm/flasm
 thirdparty/flasm/flasm.exe
 thirdparty/flasm/flasm.ini
 thirdparty/flasm/LICENSE.TXT

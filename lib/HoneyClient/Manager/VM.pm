@@ -5,7 +5,7 @@
 # Description: A SOAP server that provides programmatic access to all
 #              VM clients.
 #
-# CVS: $Id: VM.pm 787 2007-07-30 19:02:18Z kindlund $
+# CVS: $Id: VM.pm 796 2007-08-07 16:36:16Z kindlund $
 #
 # @author kindlund
 #
@@ -38,7 +38,7 @@ running VMware Server / GSX server.
 
 =head1 VERSION
 
-This documentation refers to HoneyClient::Manager:VM version 0.98.
+This documentation refers to HoneyClient::Manager:VM version 0.99.
 
 =head1 SYNOPSIS
 
@@ -319,7 +319,7 @@ BEGIN {
     our (@ISA, @EXPORT, @EXPORT_OK, %EXPORT_TAGS, $VERSION);
 
     # Set our package version.
-    $VERSION = 0.98;
+    $VERSION = 0.99;
 
     @ISA = qw(Exporter);
 

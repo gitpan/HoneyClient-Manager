@@ -4,7 +4,7 @@
 # File:        Manager.pm
 # Description: Central library used for manager-based operations.
 #
-# CVS: $Id: Manager.pm 773 2007-07-26 19:04:55Z kindlund $
+# CVS: $Id: Manager.pm 796 2007-08-07 16:36:16Z kindlund $
 #
 # @author knwang, ttruong, jdurick, kindlund
 #
@@ -35,7 +35,7 @@
 
 =head1 VERSION
 
-This documentation refers to HoneyClient::Manager version 0.98.
+This documentation refers to HoneyClient::Manager version 0.99.
 
 =head1 SYNOPSIS
 
@@ -72,7 +72,7 @@ BEGIN {
     our (@ISA, @EXPORT, @EXPORT_OK, %EXPORT_TAGS, $VERSION, @DRIVERS);
 
     # Set our package version.
-    $VERSION = 0.98;
+    $VERSION = 0.99;
 
     @ISA = qw(Exporter);
 
@@ -169,7 +169,7 @@ our $DB_ENABLE = getVar(name      => "enable",
 if ($DB_ENABLE) {
     # Include DB Utility Library
     # TODO: Include unit tests.
-    use HoneyClient::DB::Fingerprint;
+    require HoneyClient::DB::Fingerprint;
 }
 
 # XXX: Remove this, eventually.
